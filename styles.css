@@ -12,17 +12,25 @@ body {
     background-color: hsl(212, 45%, 89%);
 }
 
+#padding {
+    width: 100vw;
+    height: 100vh;
+}
+
 main{
-    width: 40ch;
-    min-height: 50vh;
+    width: 90%;
+    min-width: 30ch; 
+    max-width: 40ch;
     background-color: white;
     border-radius: 15px;
     position: relative;
-    margin-top: 13vw;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 2ch;
     box-shadow: 0 0 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -41,7 +49,7 @@ main img {
 
 main h1{
     font-size: 1.40em;
-    width: 18ch;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 1em 0;
@@ -57,4 +65,8 @@ main p {
 footer {
     position: fixed;
     bottom: 0;
+}
+
+@media screen and (min-width: 400px) {
+    
 }
